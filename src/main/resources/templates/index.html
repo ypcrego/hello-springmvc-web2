@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<p>Index de páginas: </p>
+<ul>
+    <li><a href="/hellomvc?name=Yves">Hello, MVC!</a></li>
+    <li><a href="/hello?name=Yves">Hello!</a></li>
+</ul>
+
+<br>
+<form action="/hellomvc">
+<label for="inputMVC">Digite um nome para Hello, MVC!:</label>
+    <br>
+<input type="text" id="inputMVC" name="name" />
+<input type="submit" value="Enviar nome" />
+</form>
+
+<br>
+<form action="/hello">
+    <label for="inputHello">Ou para Hello:</label>
+    <br>
+    <input type="text" id="inputHello" name="name" />
+    <input type="submit" value="Enviar nome" />
+</form>
+</body>
+</html>

@@ -13,9 +13,14 @@ public class HelloMVCController {
 
 	@Autowired
 	private HelloNegocio negocio;
-	
+
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+
 	@GetMapping("/hellomvc")
-	public String greeting(@RequestParam(name="name", required = false) 
+	public String greeting(@RequestParam(name="name", required = false)
 	String name, Model model) {
 		model.addAttribute("name", negocio.message(name));
 		return "hello";
